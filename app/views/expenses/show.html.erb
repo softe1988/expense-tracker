@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Activity:</strong>
+  <%= @expense.activity %>
+</p>
+
+<p>
+  <strong>Vendor:</strong>
+  <%= @expense.vendor_id %>
+</p>
+
+<p>
+  <strong>Client:</strong>
+  <%= @expense.client_id %>
+</p>
+
+<p>
+  <strong>Cost:</strong>
+  <%= @expense.cost %>
+</p>
+
+<p>
+  <strong>Approved:</strong>
+  <%= @expense.approved %>
+</p>
+
+<%= link_to 'Edit', edit_expense_path(@expense) %> |
+<%= link_to 'Back', expenses_path %>
