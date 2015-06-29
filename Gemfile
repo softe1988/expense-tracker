@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-
+gem 'starter_generators'
 gem 'awesome_print'
 gem 'stamp'
 gem 'paperclip', '~> 4.2'
