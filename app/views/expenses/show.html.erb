@@ -24,6 +24,8 @@
   <strong>Approved:</strong>
   <%= @expense.approved %>
 </p>
-
+<p>
+<%= image_tag @expense.receipt.url(:thumb) %>
+</p>
 <%= link_to 'Edit', edit_expense_path(@expense) %> |
 <%= link_to 'Back', expenses_path %>

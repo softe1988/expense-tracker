@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150629142700) do
+ActiveRecord::Schema.define(version: 20150629151832) do
 
   create_table "clients", force: :cascade do |t|
     t.string   "name"
@@ -26,8 +26,8 @@ ActiveRecord::Schema.define(version: 20150629142700) do
     t.integer  "client_id"
     t.float    "cost"
     t.boolean  "approved"
-    t.datetime "created_at",          null: false
-    t.datetime "updated_at",          null: false
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
     t.string   "receipt_file_name"
     t.string   "receipt_content_type"
     t.integer  "receipt_file_size"
