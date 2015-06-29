@@ -1,6 +1,6 @@
 class Expense < ActiveRecord::Base
-  belongs_to :vendors
-  belongs_to :clients
+  belongs_to :vendor
+  belongs_to :client
 
   has_attached_file :receipt, :styles => { :medium => "300x300#>",
                                           :thumb => "100x100#" },

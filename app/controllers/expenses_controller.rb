@@ -25,6 +25,7 @@ class ExpensesController < ApplicationController
   # POST /expenses.json
   def create
     @expense = Expense.new(expense_params)
+    @expenses = Expense.all
 
     respond_to do |format|
       if @expense.save
@@ -40,6 +41,7 @@ class ExpensesController < ApplicationController
   # PATCH/PUT /expenses/1
   # PATCH/PUT /expenses/1.json
   def update
+    @expenses = Expense.all
     respond_to do |format|
       if @expense.update(expense_params)
         format.html { redirect_to @expense, notice: 'Expense was successfully updated.' }

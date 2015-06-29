@@ -1,4 +1,4 @@
-<p id="notice"><%= notice %></p>
+<br>
 
 <p>
   <strong>Activity:</strong>
@@ -7,12 +7,12 @@
 
 <p>
   <strong>Vendor:</strong>
-  <%= @expense.vendor_id %>
+  <%= @expense.vendor.name %>
 </p>
 
 <p>
   <strong>Client:</strong>
-  <%= @expense.client_id %>
+  <%= @expense.client.name  %>
 </p>
 
 <p>

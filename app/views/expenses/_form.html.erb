@@ -13,31 +13,34 @@
 
   <div class="field">
     <%= f.label :activity %><br>
-    <%= f.text_field :activity %>
+    <%= f.text_field :activity, class: "form-control" %>
   </div>
   <div class="field">
     <%= f.label :vendor_id %><br>
     <%= f.collection_select :vendor_id, Vendor.all,
-                            :id, :name, { prompt: "Select a client" } %>
+                            :id, :name, { prompt: "Select a client" },
+                            class: "form-control" %>
   </div>
   <div class="field">
     <%= f.label :client_id %><br>
     <%= f.collection_select :client_id, Client.all,
-                            :id, :name, { prompt: "Select a client" } %>
+                            :id, :name, { prompt: "Select a client" },
+                            class: "form-control" %>
   </div>
   <div class="field">
     <%= f.label :cost %><br>
-    <%= f.text_field :cost %>
+    <%= f.text_field :cost, class: "form-group" %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :approved %><br>
     <%= f.check_box :approved %>
   </div>
   <div class="field">
      <%= f.label :receipt %><br>
-     <%= f.file_field :receipt %>
+     <%= f.file_field :receipt, class: "form-group" %>
     </div>
-  <div class="actions">
+  <br>
+  <div class="field-group">
     <%= f.submit %>
   </div>
 <% end %>
