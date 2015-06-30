@@ -1,5 +1,4 @@
-<p id="notice"><%= notice %></p>
-
+<div class="table">
 <p>
   <strong>Name:</strong>
   <%= @client.name %>
@@ -9,6 +8,6 @@
   <strong>Industry:</strong>
   <%= @client.industry %>
 </p>
-
+</div>
 <%= link_to 'Edit', edit_client_path(@client) %> |
 <%= link_to 'Back', clients_path %>

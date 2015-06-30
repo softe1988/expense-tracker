@@ -1,8 +1,8 @@
-<p id="notice"><%= notice %></p>
+
 
 <h1>Listing Expenses</h1>
 
-<table>
+<table class="table">
   <thead>
     <tr>
       <th>Activity</th>
@@ -10,7 +10,7 @@
       <th>Client</th>
       <th>Cost</th>
       <th>Approved</th>
-      <th colspan="3"></th>
+      <th colspan="6"></th>
     </tr>
   </thead>
 
@@ -18,10 +18,10 @@
     <% @expenses.each do |expense| %>
       <tr>
         <td><%= expense.activity %></td>
-        <td><%= expense.vendor_id %></td>
-        <td><%= expense.client_id %></td>
+        <td><%= expense.vendor.name %></td>
+        <td><%= expense.client.name %></td>
         <td><%= expense.cost %></td>
-        <td><%= expense.approved %></td>
+        <td align="center"><%= expense.approved ? '✔︎':'𝙓' %></td>
         <td><%= link_to 'Show', expense %></td>
         <td><%= link_to 'Edit', edit_expense_path(expense) %></td>
         <td><%= link_to 'Destroy', expense, method: :delete, data: { confirm: 'Are you sure?' } %></td>

@@ -1,11 +1,14 @@
 source 'https://rubygems.org'
 
 
+
 gem 'devise'
+
+gem 'starter_generators'
 gem 'awesome_print'
 gem 'stamp'
 gem 'paperclip', '~> 4.2'
-gem 'font-awesome-rails'
+gem 'font-awesome-sass'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
 # Use sqlite3 as the database for Active Record
