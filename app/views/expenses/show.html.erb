@@ -22,7 +22,7 @@
 
 <p>
   <strong>Approved:</strong>
-  <%= @expense.approved %>
+  <%= @expense.approved ? 'Yes':'No' %>
 </p>
 <p>
 <%= image_tag @expense.receipt.url(:thumb) %>
